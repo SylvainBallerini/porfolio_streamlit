@@ -73,8 +73,9 @@ def app():
     ### STREAMLIT 
 
     st.title("Analyse des trajets en Europe pour une entreprise de covoiturage")
-
+    
     st.subheader("Analyse exploratoire entre deux villes")
+    st.subheader("En prenant en compte les trajets en bus, en train et en covoiturage")
 
     # récupération de la liste des villes d'origines
     li_o_city = np.unique(df_1['o_city'])
@@ -117,7 +118,7 @@ def app():
     # deuxième question : différence de prix moyen et durée selon le train, 
     # le bus et le covoit selon la distance du trajet (0-200km, 201-800km, 800-2000km, 2000+km) 
 
-    st.subheader("Différence de prix moyen et durée selon le train, le bus et le covoit selon la distance du trajet (0-200km, 201-800km, 800-2000km, 2000+km) ")
+    st.subheader("Différence de prix moyen et durée selon le train, le bus et le covoiturage selon la distance du trajet (0-200km, 201-800km, 800-2000km, 2000+km) ")
 
     df_2 = data_ticket[['departure_ts', 'arrival_ts', 'price_in_cents', 'o_city', 'd_city','company']]
 
