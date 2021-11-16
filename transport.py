@@ -72,7 +72,7 @@ def app():
 
     ### STREAMLIT 
 
-    st.title("Analyse des trajets en Europe pour une entreprise de covoiturage")
+    st.title("Analyse des trajets en Europe (bus, covoiturage, train)")
     
     st.subheader("Analyse exploratoire entre deux villes")
     st.subheader("En prenant en compte les trajets en bus, en train et en covoiturage")
